@@ -113,25 +113,6 @@ body{
     
 }
 
-@keyframes btnNext{
-    0%{
-        transform: translateX(0);
-    }50%{
-        transform: translateX(-20%);
-    }100%{
-        transform: translateX(calc(-100% - 4rem));
-    }
-}
-@keyframes btnPrevious{
-    0%{
-        transform: translateX(calc(-100% - 4rem));
-    }50%{
-        transform: translateX(-80%);
-    }100%{
-        transform: translateX(0);
-    }
-}
-
 @media (max-width:768px) {
     .slider{
         height: 100%;

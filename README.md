@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://midu.dev/css-scroll-snap-la-solucion-definitiva-a-la-creacion-de-sliders-en-la-web/) - patrón de diseño de slider nativo css con Scroll Snap.
+- [Scroll Snap](https://midu.dev/css-scroll-snap-la-solucion-definitiva-a-la-creacion-de-sliders-en-la-web/) - patrón de diseño de slider nativo css con Scroll Snap.
 
 ## Author
 

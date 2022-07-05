@@ -7,21 +7,20 @@ const slider_conatainer = document.querySelectorAll(".slider_conatainer")
 
 
 const sliderNavigateNext= ()=>{
-    // slider_conatainer.forEach((currentValue, currentIndex, listObj)=> {
-    //     listObj[currentIndex].style.animation = "btnNext 1s ease-in 0s forwards"; 
-    // });
-    slider.scrollLeft += slider.offsetWidth;
+    slider.scroll({
+        left: slider.offsetWidth,
+        behavior: 'smooth'
+    })
 }
 
 const sliderNavigatePrevious = ()=>{
-    // slider_conatainer.forEach((currentValue, currentIndex, listObj)=> {
-    //     listObj[currentIndex].style.animation = "btnPrevious 1s ease-in 0s forwards"; 
-    // });
-    slider.scrollLeft -= slider.offsetWidth;
+    slider.scroll({
+        left: 0,
+        behavior: 'smooth'
+    })
 }
 
 window.addEventListener("keydown", (e)=>{
-    // e.preventDefault();
     if (e.code == 'ArrowRight') {
         sliderNavigateNext();
     }else if(e.code == 'ArrowLeft'){
