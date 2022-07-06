@@ -44,10 +44,14 @@ body{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     gap: 4rem;
+    outline: none;
 }
 .slider-wraper::-webkit-scrollbar {
     display: none;
-  }
+}
+.slider-wraper:focus-visible{
+    border: none;
+}
 .slider-wraper .slider_conatainer{
     display: grid;
     grid-auto-flow: column;
@@ -110,16 +114,19 @@ body{
     cursor: pointer;
 }
 .btn:hover{
-    color: var(--DarkBlue);
-    
+    color: var(--DarkBlue);  
 }
 
 @media (max-width:768px) {
+    body{
+        background-size: contain;
+    }
     .slider{
         height: 100%;
     }
     .slider-wraper{
         background-position: 50% 55%, top center;
+        background-size: 20%, contain;;
         margin-top: 2rem;
         padding: 0;
         height: 100%;
